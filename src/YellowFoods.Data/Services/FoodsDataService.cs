@@ -28,19 +28,19 @@ namespace YellowFoods.Data.Services
 
         public async Task AddFood(Food food)
         {
-            _context.Add(food);
+            _context.Foods.Add(food);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateFood(Food food)
         {
-            _context.Update(food);
+            _context.Foods.Update(food);
             await _context.SaveChangesAsync();
         }
 
         public async Task RemoveFood(Food food)
         {
-            _context.Remove(food);
+            _context.Foods.Remove(food);
             await _context.SaveChangesAsync();
         }
     }

@@ -33,19 +33,19 @@ namespace YellowFoods.Data.Services
 
         public async Task AddNutrientEntry(NutrientEntry nutrientEntry)
         {
-            _context.Add(nutrientEntry);
+            _context.NutrientEntries.Add(nutrientEntry);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateNutrientEntry(NutrientEntry nutrientEntry)
         {
-            _context.Update(nutrientEntry);
+            _context.NutrientEntries.Update(nutrientEntry);
             await _context.SaveChangesAsync();
         }
 
         public async Task RemoveNutrientEntry(NutrientEntry nutrientEntry)
         {
-            _context.Remove(nutrientEntry);
+            _context.NutrientEntries.Remove(nutrientEntry);
             await _context.SaveChangesAsync();
         }
 
