@@ -22,8 +22,8 @@ namespace YellowFoods.Extensions
             if (controller != null
                 && controller.EndsWith(ControllerSuffix))
             {
-                int index = controller.LastIndexOf(ControllerSuffix);
-                controller = controller.Remove(index);
+                int lastIndex = controller.LastIndexOf(ControllerSuffix);
+                controller = controller.Remove(lastIndex);
             }
 
             return generator.GetUriByAction(
